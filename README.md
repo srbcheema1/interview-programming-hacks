@@ -18,6 +18,10 @@
   - substring of string
     - string a = str.substr(i,l) // here it does [i,i+l)
     
+## Char
+  - check if char is digit, alpha or alphanumeric
+    - isdigit(ch), isalpha(ch), isalnum(ch)
+    
 ## vectors
   - copy a vector into another
     - another_vec.assign(vec.begin(),vec.end())
