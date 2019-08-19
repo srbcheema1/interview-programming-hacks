@@ -30,11 +30,18 @@
     - std::fill(vec.begin(),vec.end(),0)
     - std::fill(vec.begin(),vec.end(),vector<int>(m,0)) // fill 2D array with 0.
     
- # C language tricks
+## Map
+  - iterate over map
+    - instead of using for each loop use:
+      - for(map<int,int>::iterator x = freq.begin(); x!=freq.end(); x++) int a = x->first, b = x->second;
+        - remember that we cant use comparision operator sometimes, always write `x!=freq.end()`
+
+
+# C language tricks
   - pass 2d array to function
     - instead of passing 2D array to function declare a global array and use it.
  
- ## python language tricks
+## python language tricks
   - declare 2d array
     - a = [[0] * cols for _ in range(rows)]
     - a = [[0] * cols] * rows     # wrong way coz inner arrays are reffering to same array.
