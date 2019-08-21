@@ -29,6 +29,8 @@
   - fill a vector with some number
     - std::fill(vec.begin(),vec.end(),0)
     - std::fill(vec.begin(),vec.end(),vector<int>(m,0)) // fill 2D array with 0.
+  - reverse access of vector
+    - for(auto x = vec.rbegin(); x != vec.rend(); x++) // note `x++` here, incrementing reverse iterator goes back
     
 ## Map
   - iterate over map
