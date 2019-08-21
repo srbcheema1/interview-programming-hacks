@@ -14,7 +14,7 @@
     - strcpy(a,str.c_str()] // copy const c_string into non-const c_string
   - char array to string
     - char a[] = "helloworld";
-    - std::string res = std::string(ch)
+    - std::string res = std::string(a)
   - substring of string
     - string a = str.substr(i,l) // here it does [i,i+l)
     
