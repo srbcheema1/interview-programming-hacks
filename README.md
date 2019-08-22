@@ -37,6 +37,19 @@
     - instead of using for each loop use:
       - for(map<int,int>::iterator x = freq.begin(); x!=freq.end(); x++) int a = x->first, b = x->second;
         - remember that we cant use comparision operator sometimes, always write `x!=freq.end()`
+        
+## Bitset
+  - assign value
+    - bitset<5> a(3); // gets value 3 .. i.e "00011"
+    - a = bitset<5>(5); // assigns value to 5 ... i.e "00101"
+  - select elem
+    - a[1] = 1; a[0]^=1; // here `0 stands for least significant bit`.
+  - print bitset
+    - cout << a << endl; // same as `a.to_string()`, prints in reverse order, 0th bit at last. here "00110" is 6.
+  - convert to integer
+    - a.to_ulong() // to convert into unsigned long
+    - a.to_ullong() // to convert into unsigned long long
+  - NOTE: always while playing with bitset try to use unsigned long long.
 
 
 # C language tricks
