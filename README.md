@@ -31,6 +31,11 @@
     - std::fill(vec.begin(),vec.end(),vector<int>(m,0)) // fill 2D array with 0.
   - reverse access of vector
     - for(auto x = vec.rbegin(); x != vec.rend(); x++) // note `x++` here, incrementing reverse iterator goes back
+  - `upper_bound` vs `lower_bound`
+    - upper bound is first greater than element
+    - lower bound is greater than or equals to
+    - these both are same when element is not found
+    - difference of both tell us number of times an element is present
     
 ## Map
   - iterate over map
