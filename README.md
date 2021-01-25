@@ -31,11 +31,14 @@
     - std::fill(vec.begin(),vec.end(),vector<int>(m,0)) // fill 2D array with 0.
   - reverse access of vector
     - for(auto x = vec.rbegin(); x != vec.rend(); x++) // note `x++` here, incrementing reverse iterator goes back
-  - `upper_bound` vs `lower_bound`
-    - upper bound is first greater than element
-    - lower bound is greater than or equals to
+  - `upper_bound` vs `lower_bound`, REMEMBER WORD FIRST
+    - upper bound is FIRST greater than element
+    - lower bound is FIRST greater than or equals to
     - these both are same when element is not found
     - difference of both tell us number of times an element is present
+    - HACK-TO-REMEMBER: remember in both the definitions there is word "first"
+      - there are 4 things possible, first smaller, first smaller equal, first greater, first greater equals
+      - just feel first smaller and first smaller equal has got no significance. as they may always be element 0 mostly.
     
 ## Map
   - iterate over map
