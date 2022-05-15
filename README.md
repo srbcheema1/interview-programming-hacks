@@ -68,3 +68,7 @@
   - declare 2d array
     - a = [[0] * cols for _ in range(rows)]
     - a = [[0] * cols] * rows     # wrong way coz inner arrays are reffering to same array.
+
+## Algo hacks
+  - Binary search: `while(l<=r) { mid = (l+r)/2; if(cond) {mid = l+1;} else {mid = r-1;}}`
+  - hash: `hash<string> hasher; size_t hash_val = hasher(s);`
