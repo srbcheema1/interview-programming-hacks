@@ -39,6 +39,17 @@
     - HACK-TO-REMEMBER: remember in both the definitions there is word "first"
       - there are 4 things possible, first smaller, first smaller equal, first greater, first greater equals
       - just feel first smaller and first smaller equal has got no significance. as they may always be element 0 mostly.
+
+## Priority Queue:
+  - By default priority queue is max_heap, it can be created as min heap by providing std::greater<T> as comparator:
+    - std::priority_queue<int, std::vector<int>, std::greater<int>> minHeap;
+    - In case of custom comparator, we need to declare a struct :
+      - struct CustomComparator {bool operator()(const int& a, const int& b) const {return a > b;}};  // min_heap
+      
+
+## Sort:
+  - By default sort is ascending
+    - you can provide std::greater<T>() or custom function that returns boolean as custom comparator.
     
 ## Map
   - iterate over map
@@ -68,6 +79,8 @@
   - declare 2d array
     - a = [[0] * cols for _ in range(rows)]
     - a = [[0] * cols] * rows     # wrong way coz inner arrays are reffering to same array.
+  - reverse an array or string
+    - arr = arr[::-1]  # -1 means step backword, hence it starts from last element and ends till first.  
 
 ## Algo hacks
   - Binary search: `while(l<=r) { mid = (l+r)/2; if(cond) {mid = l+1;} else {mid = r-1;}}`
